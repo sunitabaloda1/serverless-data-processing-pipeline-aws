@@ -1,15 +1,12 @@
 # Building a Serverless Data Processing Pipeline on AWS
 
-**M.Sc. in Data Science and AI --- Cloud Services & Platform**\
-**BITS Pilani Digital**
+**M.Sc. in Data Science and AI --- Cloud Services & Platform**
 
 ## Project Overview
 
 This project demonstrates the design and implementation of a
 **serverless, event-driven data processing pipeline on Amazon Web
-Services (AWS)**.
-
-The solution uses:
+Services (AWS)**. The solution uses:
 
 -   **Amazon S3** as the data ingestion layer
 -   **AWS Lambda** for automated file processing
@@ -60,13 +57,13 @@ Processed File Metadata
 ### High-Level Architecture
 
 ![AWS Serverless
-Architecture](visualizations/aws_serverless_architecture.png)
+Architecture](visualizations/01_aws_serverless_architecture.png)
 
 ------------------------------------------------------------------------
 
 ## End-to-End Workflow
 
-![End-to-End Workflow](visualizations/end_to_end_workflow.png)
+![End-to-End Workflow](visualizations/02_end_to_end_workflow.png)
 
 The workflow consists of:
 
@@ -85,7 +82,7 @@ The workflow consists of:
 ## Lambda Processing Lifecycle
 
 ![Lambda Processing
-Lifecycle](visualizations/lambda_processing_lifecycle.png)
+Lifecycle](visualizations/03_lambda_processing_lifecycle.png)
 
 The Lambda processing lifecycle shows the internal execution sequence
 from the S3 event through file retrieval, validation, processing,
@@ -99,7 +96,7 @@ and reads the uploaded file from S3 using **boto3**.
 ## AWS Services and Responsibilities
 
 ![AWS Service Responsibility
-Map](visualizations/aws_service_responsibility_map.png)
+Map](visualizations/06_aws_service_responsibility_map.png)
 
   -----------------------------------------------------------------------
   AWS Service                         Responsibility
@@ -118,13 +115,12 @@ Map](visualizations/aws_service_responsibility_map.png)
 
   **AWS IAM**                         Controls access to AWS resources
                                       and supports least-privilege access
-  -----------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 
 ## Security and IAM
 
-![Security and IAM Model](visualizations/security_iam_model.png)
+![Security and IAM Model](visualizations/04_security_iam_model.png)
 
 AWS Identity and Access Management (IAM) is used to control access to
 the resources required by the workflow.
@@ -142,7 +138,7 @@ CloudWatch.
 ## Observability and Monitoring
 
 ![Observability and
-Monitoring](visualizations/observability_monitoring.png)
+Monitoring](visualizations/05_observability_validation_flow.png)
 
 Amazon CloudWatch provides visibility into Lambda execution and
 supports:
@@ -161,7 +157,7 @@ successful execution activity.
 ## Cost and Scalability
 
 ![Cost Estimation and
-Scalability](visualizations/cost_estimation_scalability.png)
+Scalability](visualizations/07_cost_estimation_and_scalability.png)
 
 The architecture uses managed, serverless AWS services. Lambda execution
 is event-driven, so processing occurs when required rather than relying
@@ -290,8 +286,7 @@ The documented validation sequence is:
 
   **Security**                        IAM controls access and supports
                                       least-privilege principles
-  -----------------------------------------------------------------------
-
+                                      
 ------------------------------------------------------------------------
 
 ## Learning Outcomes
@@ -361,7 +356,7 @@ solutions.
 
 ## Academic Context
 
-**Author:** Sunita Baloda
+**Author:** Sunita Baloda\
 **Programme:** M.Sc. in Data Science and AI\
 **Course:** Cloud Services & Platform\
 **Institution:** BITS Pilani Digital\
